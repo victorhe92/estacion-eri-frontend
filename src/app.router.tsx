@@ -3,13 +3,13 @@ import { HomePage } from "./home/HomePage";
 import { LoginPage } from "./login/LoginPage";
 import { CategoryPage } from "./category/CategoryPage";
 import { ProductPage } from "./product/ProductPage";
-import { Layout } from "./layouts/Layout";
+import { PublicLayout } from "./layouts/public-layout/PublicLayout";
 
 export const router = createBrowserRouter([
   {
     path: "/",
 
-    element: <Layout />,
+    element: <PublicLayout />,
     children: [
       {
         index: true,
