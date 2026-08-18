@@ -8,16 +8,20 @@ import { cn } from "@/lib/utils";
 import { SearchIcon } from "lucide-react";
 
 interface Props {
-  className: string;
+  className?: string;
 }
 
 export const SearchBar = ({ className }: Props) => {
   return (
-    <div className={cn(className)}>
-      <InputGroup className="group bg-rosado/30 focus-within:bg-rosado/50 rounded-full">
+    <div className={cn("", className)}>
+      <InputGroup
+        className={cn(
+          "group bg-rosado/30 focus-within:bg-rosado/50 rounded-full text-xs",
+        )}
+      >
         <InputGroupInput
           placeholder="Buscas tus productos favoritos..."
-          className="text-plomo"
+          className="text-plomo md:text-xs"
         />
         <InputGroupAddon align="inline-end" className="pr-0.4">
           <InputGroupButton
