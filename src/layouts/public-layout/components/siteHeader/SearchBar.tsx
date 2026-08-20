@@ -21,7 +21,7 @@ export const SearchBar = ({ className }: Props) => {
       >
         <InputGroupInput
           placeholder="Buscas tus productos favoritos..."
-          className="text-plomo md:text-xs"
+          className="text-plomo md:text-sm"
         />
         <InputGroupAddon align="inline-end" className="pr-0.4">
           <InputGroupButton
